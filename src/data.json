@@ -20,6 +20,12 @@
         "large": "./assets/starry-night/hero-large.jpg"
       },
       "gallery": "./assets/starry-night/gallery.jpg"
+    },
+    "light": {
+      "width": "350px"
+    },
+    "dark": {
+      "width": "25px"
     }
   },
   {
@@ -43,6 +49,12 @@
         "large": "./assets/girl-with-pearl-earring/hero-large.jpg"
       },
       "gallery": "./assets/girl-with-pearl-earring/gallery.jpg"
+    },
+    "light": {
+      "width": "325px"
+    },
+    "dark": {
+      "width": "50px"
     }
   },
   {
@@ -66,6 +78,12 @@
         "large": "./assets/guernica/hero-large.jpg"
       },
       "gallery": "./assets/guernica/gallery.jpg"
+    },
+    "light": {
+      "width": "300px"
+    },
+    "dark": {
+      "width": "75px"
     }
   },
   {
@@ -89,6 +107,12 @@
         "large": "./assets/penitent-magdalene/hero-large.jpg"
       },
       "gallery": "./assets/penitent-magdalene/gallery.jpg"
+    },
+    "light": {
+      "width": "275px"
+    },
+    "dark": {
+      "width": "100px"
     }
   },
   {
@@ -112,6 +136,12 @@
         "large": "./assets/the-storm-on-the-sea-of-galilee/hero-large.jpg"
       },
       "gallery": "./assets/the-storm-on-the-sea-of-galilee/gallery.jpg"
+    },
+    "light": {
+      "width": "250px"
+    },
+    "dark": {
+      "width": "125px"
     }
   },
   {
@@ -135,6 +165,12 @@
         "large": "./assets/the-great-wave-off-kanagawa/hero-large.jpg"
       },
       "gallery": "./assets/the-great-wave-off-kanagawa/gallery.jpg"
+    },
+    "light": {
+      "width": "225px"
+    },
+    "dark": {
+      "width": "150px"
     }
   },
   {
@@ -158,6 +194,12 @@
         "large": "./assets/van-gogh-self-portrait/hero-large.jpg"
       },
       "gallery": "./assets/van-gogh-self-portrait/gallery.jpg"
+    },
+    "light": {
+      "width": "200px"
+    },
+    "dark": {
+      "width": "175px"
     }
   },
   {
@@ -181,6 +223,12 @@
         "large": "./assets/the-sleeping-gypsy/hero-large.jpg"
       },
       "gallery": "./assets/the-sleeping-gypsy/gallery.jpg"
+    },
+    "light": {
+      "width": "175px"
+    },
+    "dark": {
+      "width": "200px"
     }
   },
   {
@@ -204,6 +252,12 @@
         "large": "./assets/lady-with-an-ermine/hero-large.jpg"
       },
       "gallery": "./assets/lady-with-an-ermine/gallery.jpg"
+    },
+    "light": {
+      "width": "150px"
+    },
+    "dark": {
+      "width": "225px"
     }
   },
   {
@@ -227,6 +281,12 @@
         "large": "./assets/the-night-cafe/hero-large.jpg"
       },
       "gallery": "./assets/the-night-cafe/gallery.jpg"
+    },
+    "light": {
+      "width": "125px"
+    },
+    "dark": {
+      "width": "250px"
     }
   },
   {
@@ -250,6 +310,12 @@
         "large": "./assets/the-basket-of-apples/hero-large.jpg"
       },
       "gallery": "./assets/the-basket-of-apples/gallery.jpg"
+    },
+    "light": {
+      "width": "100px"
+    },
+    "dark": {
+      "width": "275px"
     }
   },
   {
@@ -273,6 +339,12 @@
         "large": "./assets/the-boy-in-the-red-vest/hero-large.jpg"
       },
       "gallery": "./assets/the-boy-in-the-red-vest/gallery.jpg"
+    },
+    "light": {
+      "width": "75px"
+    },
+    "dark": {
+      "width": "300px"
     }
   },
   {
@@ -296,6 +368,12 @@
         "large": "./assets/arnolfini-portrait/hero-large.jpg"
       },
       "gallery": "./assets/arnolfini-portrait/gallery.jpg"
+    },
+    "light": {
+      "width": "50px"
+    },
+    "dark": {
+      "width": "325px"
     }
   },
   {
@@ -319,6 +397,12 @@
         "large": "./assets/mona-lisa/hero-large.jpg"
       },
       "gallery": "./assets/mona-lisa/gallery.jpg"
+    },
+    "light": {
+      "width": "25px"
+    },
+    "dark": {
+      "width": "350px"
     }
   },
   {
@@ -342,6 +426,12 @@
         "large": "./assets/the-swing/hero-large.jpg"
       },
       "gallery": "./assets/the-swing/gallery.jpg"
+    },
+    "light": {
+      "width": "0px"
+    },
+    "dark": {
+      "width": "375px"
     }
   }
 ]
