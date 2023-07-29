@@ -6,7 +6,6 @@ import BackDisabled from '../assets/shared/icon-back-button-disabled.svg'
 import ForwardButton from '../assets/shared/icon-next-button.svg'
 import ForwardDisabled from '../assets/shared/icon-next-button-disabled.svg'
 
-console.log(Data)
 
 function Gallery() {
   return (
@@ -92,34 +91,49 @@ function Gallery() {
           })
         }
       </div>
-      <div id="footerContainer" className='hidden border-t border-t-medGray py-4 px-6'>
+      <div id="footerContainer" className='hidden'>
+        
         {
           Data && Data.map( record => {
             const footerId = record.id+'footer'
-            console.log(record.id)
+            const lightLine = {
+              width: `${record.light.width}`
+            }
+            const darkLine = {
+              width: `${record.dark.width}`
+            }
             return(
-              <div key={record.id} id={footerId} className='hidden'>
-                <div id="footerDetails">
-                  <div id="footerName" className='mb-[9px] text-black text-sm leading-normal font-bold'>
-                    <p>{record.name}</p>
+              <>
+                
+                <div key={record.id} id={footerId} className='hidden items-center justify-between '>
+                  <div id="lineContainer" className='flex'>
+                    <div id="darkLine" style={darkLine} className='h-[1px] bg-black' />
+                    <div id="lightLine" style={lightLine} className='h-[1px] bg-medGray' />
                   </div>
-                  <div id="footAuthor" className='text-black text-[10px] font-normal leading-normal opacity-75'>
-                    <p>{record.artist.name}</p>
+                  <div id="completeFooter" className='flex justify-between pr-6 pb-4 pt-6'>
+                    <div id="footerDetails" className='px-6'>
+                      <div id="footerName" className='mb-[9px] text-black text-sm leading-normal font-bold'>
+                        <p>{record.name}</p>
+                      </div>
+                      <div id="footAuthor" className='text-black text-[10px] font-normal leading-normal opacity-75'>
+                        <p>{record.artist.name}</p>
+                      </div>
+                    </div>
+                    <div id="footerIcons" className='flex justify-between w-[56px]'>
+                      <div id="iconLeft">
+                        <img src={
+                          record.id === 'one' ? BackDisabled : BackButton
+                        } alt="button" className='h-4' /> 
+                      </div>
+                      <div id="iconRight">
+                        <img src={
+                          record.id === 'fifteen' ? ForwardDisabled : ForwardButton
+                        } alt="button" className='h-4' />
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div id="footerIcons">
-                  <div id="iconLeft" className='h-4'>
-                    <img src={
-                      record.id === 'one' ? BackDisabled : BackButton
-                    } alt="button" /> 
-                  </div>
-                  <div id="iconRight" className='h-4'>
-                    <img src={
-                      record.id === 'fifteen' ? ForwardDisabled : ForwardButton
-                    } alt="button" />
-                  </div>
-                </div>
-              </div>
+              </>
             )
           })
         }

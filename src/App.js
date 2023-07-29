@@ -2,6 +2,8 @@ import './App.css';
 import Header from './components/Header'
 import Gallery from './components/Gallery'
 
+// connect front, back and start slideshow buttons
+
 function App() {
   return (
     <div id='mainWrapper'>
