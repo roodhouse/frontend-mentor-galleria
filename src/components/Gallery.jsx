@@ -1,13 +1,17 @@
 import React from 'react'
 import Data from '../data.json'
 import ViewMore from '../assets/shared/icon-view-image.svg'
+import BackButton from '../assets/shared/icon-back-button.svg'
+import BackDisabled from '../assets/shared/icon-back-button-disabled.svg'
+import ForwardButton from '../assets/shared/icon-next-button.svg'
+import ForwardDisabled from '../assets/shared/icon-next-button-disabled.svg'
 
 console.log(Data)
 
 function Gallery() {
   return (
     <>
-      <div id="galleryContainer" className=''>
+      <div id="galleryContainer" className='px-6'>
         {
           Data && Data.map( record => {
             
@@ -23,6 +27,8 @@ function Gallery() {
               document.getElementById('galleryContainer').classList.add('hidden')
               document.getElementById('profileContainer').classList.remove('hidden')
               document.getElementById(record.id).classList.remove('hidden')
+              document.getElementById('footerContainer').classList.remove('hidden')
+              document.getElementById(record.id+'footer').classList.remove('hidden')
             }
 
             return(
@@ -38,7 +44,7 @@ function Gallery() {
           })
         }
       </div>
-      <div id="profileContainer" className='hidden'>
+      <div id="profileContainer" className='hidden px-6'>
         {
           Data && Data.map( record => {
 
@@ -47,10 +53,6 @@ function Gallery() {
             }
 
             return(
-              // div with background image as picture
-              // div has view image button and name of picture
-              // name of picture has a white background with padding
-              // below is another div with the author name 
               <div key={record.id} id={record.id} className='hidden'>
                 <div style={divStyle} className='flex flex-col justify-between h-[280px] bg-cover bg-no-repeat bg-center'>
                   <div id='imageButton' className='pt-4 pl-4 cursor-pointer'>
@@ -89,6 +91,39 @@ function Gallery() {
             )
           })
         }
+      </div>
+      <div id="footerContainer" className='hidden border-t border-t-medGray py-4 px-6'>
+        {
+          Data && Data.map( record => {
+            const footerId = record.id+'footer'
+            console.log(record.id)
+            return(
+              <div key={record.id} id={footerId} className='hidden'>
+                <div id="footerDetails">
+                  <div id="footerName" className='mb-[9px] text-black text-sm leading-normal font-bold'>
+                    <p>{record.name}</p>
+                  </div>
+                  <div id="footAuthor" className='text-black text-[10px] font-normal leading-normal opacity-75'>
+                    <p>{record.artist.name}</p>
+                  </div>
+                </div>
+                <div id="footerIcons">
+                  <div id="iconLeft" className='h-4'>
+                    <img src={
+                      record.id === 'one' ? BackDisabled : BackButton
+                    } alt="button" /> 
+                  </div>
+                  <div id="iconRight" className='h-4'>
+                    <img src={
+                      record.id === 'fifteen' ? ForwardDisabled : ForwardButton
+                    } alt="button" />
+                  </div>
+                </div>
+              </div>
+            )
+          })
+        }
+
       </div>
     </>
   )
