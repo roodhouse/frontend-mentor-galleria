@@ -5,11 +5,7 @@ import Data from '../data.json'
 function Header() {
 
   function handleClick(e) {
-    
-    console.log(e)
-    console.log(Data[0])
     let slideshow = document.getElementById('button').firstChild
-    console.log(slideshow.innerHTML)
       Data.map( record => {
         if (slideshow.innerHTML === 'Start Slideshow') {
             document.getElementById('galleryContainer').classList.add('hidden')
@@ -19,13 +15,12 @@ function Header() {
             document.getElementById('onefooter').classList.remove('hidden')
             document.getElementById('button').firstChild.innerHTML = 'Stop Slideshow'
         } else if (slideshow.innerHTML === 'Stop Slideshow') {
-          console.log('stop')
+         
             document.getElementById('galleryContainer').classList.remove('hidden')
             document.getElementById('profileContainer').classList.add('hidden')
             document.getElementById('one').classList.add('hidden')
             document.getElementById('footerContainer').classList.add('hidden')
             document.getElementById('onefooter').classList.add('hidden')
-            console.log(record.id)
             document.querySelectorAll('.child').forEach((kid)=> {
               kid.classList.add('hidden')
             })

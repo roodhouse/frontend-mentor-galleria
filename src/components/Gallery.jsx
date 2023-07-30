@@ -8,6 +8,7 @@ import ForwardDisabled from '../assets/shared/icon-next-button-disabled.svg'
 
 
 function Gallery() {
+
   return (
     <>
       <div id="galleryContainer" className='px-6'>
@@ -20,9 +21,7 @@ function Gallery() {
             }
 
             function handleClick(e) {
-              console.log(e)
-              console.log(record.name)
-              console.log(record.id)
+              document.getElementById('mainWrapper').scrollIntoView()
               document.getElementById('galleryContainer').classList.add('hidden')
               document.getElementById('profileContainer').classList.remove('hidden')
               document.getElementById(record.id).classList.remove('hidden')
@@ -129,6 +128,7 @@ function Gallery() {
             }
 
             function backClick() {
+              document.getElementById('mainWrapper').scrollIntoView()
               if ( record.id === 'one' ) {
                 console.log('one is the only number')
               } else {
@@ -151,6 +151,7 @@ function Gallery() {
             }
 
             function forwardClick() {
+              document.getElementById('mainWrapper').scrollIntoView()
               if ( record.id === 'fifteen') {
                 console.log('i guess fifteen is also a number')
               } else {
