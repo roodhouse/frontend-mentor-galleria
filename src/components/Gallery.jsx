@@ -43,7 +43,7 @@ function Gallery() {
           })
         }
       </div>
-      <div id="profileContainer" className='hidden px-6'>
+      <div id="profileContainer" className='hidden'>
         {
           Data && Data.map( record => {
 
@@ -51,42 +51,66 @@ function Gallery() {
               backgroundImage: `url(${record.images.thumbnail.image})`,
             }
 
+            const lightbox = record.id+'box'
+            const imageBox = record.id+'imgBox'
+
+            function handleClick() {
+              document.getElementById(record.id+'box').classList.remove('hidden')
+              document.getElementById(record.id+'imgBox').classList.remove('hidden')
+            }
+
+            function handleClose() {
+              document.getElementById(record.id+'box').classList.add('hidden')
+              document.getElementById(record.id+'imgBox').classList.add('hidden')
+            }
+
             return(
-              <div key={record.id} id={record.id} className='hidden'>
-                <div style={divStyle} className='flex flex-col justify-between h-[280px] bg-cover bg-no-repeat bg-center'>
-                  <div id='imageButton' className='pt-4 pl-4 cursor-pointer'>
-                    <button className='flex items-center text-white uppercase px-4 py-[14px] bg-black opacity-75 hover:bg-darkGray'>
-                      <div id="imgButtonContainer" className='mr-[14px]'>
-                        <img src={ViewMore} alt="full view" />
-                      </div>
-                      <div id="buttonCopy" className='text-right text-[10px] font-bold leading-normal tracking-[2.143px]'>
-                        <p>View Image</p>
-                      </div>
-                    </button>
+              <>
+                <div key={record.id} id={record.id} className='hidden px-6'>
+                  <div style={divStyle} className='flex flex-col justify-between h-[280px] bg-cover bg-no-repeat bg-center'>
+                    <div id='imageButton' onClick={handleClick} className='pt-4 pl-4 cursor-pointer'>
+                      <button className='flex items-center text-white uppercase px-4 py-[14px] bg-black opacity-75 hover:bg-darkGray'>
+                        <div id="imgButtonContainer" className='mr-[14px]'>
+                          <img src={ViewMore} alt="full view" />
+                        </div>
+                        <div id="buttonCopy" className='text-right text-[10px] font-bold leading-normal tracking-[2.143px]'>
+                          <p>View Image</p>
+                        </div>
+                      </button>
+                    </div>
+                    <div className='text-black bg-white px-6 py-6 text-2xl leading-[29px] font-bold mr-[47px] pb-2'>
+                      <h1 >{record.name}</h1>
+                    </div>
                   </div>
-                  <div className='text-black bg-white px-6 py-6 text-2xl leading-[29px] font-bold mr-[47px] pb-2'>
-                    <h1 >{record.name}</h1>
-                  </div>
+                    <div className='text-darkGray bg-white px-6 text-[15px] leading-normal font-normal mr-[47px] mb-6'>
+                      <p>{record.artist.name}</p>
+                    </div>
+                    <div id="artImgYear" className='pl-4 flex'>
+                      <div id='artImg' className='w-16 h-16 mr-[9px]'>
+                        <img src={record.artist.image} alt={record.artist.name} />
+                      </div>
+                      <div id="artYear" className='text-lightGray text-[100px] font-bold leading-[100px] mt-11'>
+                        <p>{record.year}</p>
+                      </div>
+                    </div>
+                    <div id="artCopy" className='text-darkGray text-sm leading-7 font-bold mt-[-25px] mb-[68px]'>
+                      <p>{record.description}</p>
+                    </div>
+                    <div id="source" className='uppercase mb-[68px] text-darkGray text-[9px] font-bold leading-normal tracking-[1.929px] underline'>
+                      <a href={record.source}>Go to source</a>
+                    </div>
                 </div>
-                  <div className='text-darkGray bg-white px-6 text-[15px] leading-normal font-normal mr-[47px] mb-6'>
-                    <p>{record.artist.name}</p>
-                  </div>
-                  <div id="artImgYear" className='pl-4 flex'>
-                    <div id='artImg' className='w-16 h-16 mr-[9px]'>
-                      <img src={record.artist.image} alt={record.artist.name} />
+                    <div id={lightbox} key={lightbox} className='hidden h-screen bg-black opacity-[.85] absolute top-0 left-0 w-full' />
+                    <div id={imageBox} key={imageBox} className='hidden flex flex-col items-end justify-center h-screen absolute top-0 left-0 w-full pr-6'>
+                      <div id="close" className=''>
+                        <button onClick={handleClose} className='uppercase text-white text-right text-sm font-bold leading-normal tracking-[3px] mb-[33px]' >close</button>
+                      </div>
+                      <div id='galleryImage'>
+                        <img src={record.images.thumbnail.image} alt={record.name} />
+                      </div>
                     </div>
-                    <div id="artYear" className='text-lightGray text-[100px] font-bold leading-[100px] mt-11'>
-                      <p>{record.year}</p>
-                    </div>
-                  </div>
-                  <div id="artCopy" className='text-darkGray text-sm leading-7 font-bold mt-[-25px] mb-[68px]'>
-                    <p>{record.description}</p>
-                  </div>
-                  <div id="source" className='uppercase mb-[68px] text-darkGray text-[9px] font-bold leading-normal tracking-[1.929px] underline'>
-                    <a href={record.source}>Go to source</a>
-                  </div>
-              </div>
-              
+                    
+              </>
             )
           })
         }
