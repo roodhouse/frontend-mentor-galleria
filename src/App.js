@@ -2,7 +2,9 @@ import './App.css';
 import Header from './components/Header'
 import Gallery from './components/Gallery'
 
-// connect front, back
+// tabView
+// dtView
+// prevent scroll when lightbox is open
 
 function App() {
   
