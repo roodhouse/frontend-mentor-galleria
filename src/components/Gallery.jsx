@@ -11,7 +11,7 @@ function Gallery() {
 
   return (
     <>
-      <div id="galleryContainer" className='px-6'>
+      <div id="galleryContainer" className='px-6 md:pl-0 md:pr-0 md:flex md:flex-wrap'>
         {
           Data && Data.map( record => {
             
@@ -31,7 +31,7 @@ function Gallery() {
             }
 
             return(
-              <div key={record.name} style={divStyle} onClick={handleClick} className='w-[327px] mb-6 pl-8 pr-[49px] pb-8 flex flex-col justify-end' >
+              <div key={record.name} style={divStyle} onClick={handleClick} className='w-[327px] mb-6 pl-8 pr-[49px] pb-8 flex flex-col justify-end md:mb-10 md:ml-10 md:w-[324px]' >
                 <div className='name text-white text-2xl leading-normal font-bold mb-[7px]'>
                   <h2>{record.name}</h2>
                 </div>
