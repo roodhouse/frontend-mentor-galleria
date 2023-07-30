@@ -2,10 +2,10 @@ import './App.css';
 import Header from './components/Header'
 import Gallery from './components/Gallery'
 
-// generate lightbox on click of viewmore
-// connect front, back and start slideshow buttons
+// connect front, back
 
 function App() {
+  
   return (
     <div id='mainWrapper'>
       <div id='mainContainer' className='pt-6'>

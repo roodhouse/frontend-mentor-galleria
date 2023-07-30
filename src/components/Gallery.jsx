@@ -28,6 +28,7 @@ function Gallery() {
               document.getElementById(record.id).classList.remove('hidden')
               document.getElementById('footerContainer').classList.remove('hidden')
               document.getElementById(record.id+'footer').classList.remove('hidden')
+              document.getElementById('button').firstChild.innerHTML = 'Stop Slideshow'
             }
 
             return(
@@ -66,7 +67,7 @@ function Gallery() {
 
             return(
               <>
-                <div key={record.id} id={record.id} className='hidden px-6'>
+                <div key={record.id} id={record.id} className='child hidden px-6'>
                   <div style={divStyle} className='flex flex-col justify-between h-[280px] bg-cover bg-no-repeat bg-center'>
                     <div id='imageButton' onClick={handleClick} className='pt-4 pl-4 cursor-pointer'>
                       <button className='flex items-center text-white uppercase px-4 py-[14px] bg-black opacity-75 hover:bg-darkGray'>
@@ -129,7 +130,7 @@ function Gallery() {
             return(
               <>
                 
-                <div key={record.id} id={footerId} className='hidden items-center justify-between '>
+                <div key={record.id} id={footerId} className='footer hidden items-center justify-between '>
                   <div id="lineContainer" className='flex'>
                     <div id="darkLine" style={darkLine} className='h-[1px] bg-black' />
                     <div id="lightLine" style={lightLine} className='h-[1px] bg-medGray' />
