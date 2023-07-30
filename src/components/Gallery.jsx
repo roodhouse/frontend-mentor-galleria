@@ -127,6 +127,51 @@ function Gallery() {
             const darkLine = {
               width: `${record.dark.width}`
             }
+
+            function backClick() {
+              if ( record.id === 'one' ) {
+                console.log('one is the only number')
+              } else {
+                let currentIndex = Data.indexOf(record)
+                let previousIndex = currentIndex - 1
+                
+                currentIndex = currentIndex.toString()
+                previousIndex = previousIndex.toString()
+                let currentEl = document.getElementById(Data[currentIndex].id)
+                let previousEl = document.getElementById(Data[previousIndex].id)
+                
+                currentEl.classList.add('hidden')
+                previousEl.classList.remove('hidden')
+
+                let currentFooter = document.getElementById(Data[currentIndex].id+'footer')
+                let previousFooter = document.getElementById(Data[previousIndex].id+'footer')
+                currentFooter.classList.add('hidden')
+                previousFooter.classList.remove('hidden')
+              }
+            }
+
+            function forwardClick() {
+              if ( record.id === 'fifteen') {
+                console.log('i guess fifteen is also a number')
+              } else {
+                let currentIndex = Data.indexOf(record)
+                let nextIndex = currentIndex + 1 
+
+                currentIndex = currentIndex.toString()
+                nextIndex = nextIndex.toString()
+                let currentEl = document.getElementById(Data[currentIndex].id)
+                let nextEl = document.getElementById(Data[nextIndex].id)
+                
+                currentEl.classList.add('hidden')
+                nextEl.classList.remove('hidden')
+
+                let currentFooter = document.getElementById(Data[currentIndex].id+'footer')
+                let nextFooter = document.getElementById(Data[nextIndex].id+'footer')
+                currentFooter.classList.add('hidden')
+                nextFooter.classList.remove('hidden')
+              }
+            }
+
             return(
               <>
                 
@@ -145,12 +190,12 @@ function Gallery() {
                       </div>
                     </div>
                     <div id="footerIcons" className='flex justify-between w-[56px]'>
-                      <div id="iconLeft">
+                      <div id="iconLeft" onClick={backClick}>
                         <img src={
                           record.id === 'one' ? BackDisabled : BackButton
                         } alt="button" className='h-4' /> 
                       </div>
-                      <div id="iconRight">
+                      <div id="iconRight" onClick={forwardClick}>
                         <img src={
                           record.id === 'fifteen' ? ForwardDisabled : ForwardButton
                         } alt="button" className='h-4' />
