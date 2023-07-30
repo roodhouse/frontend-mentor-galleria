@@ -65,7 +65,7 @@ function Gallery() {
             }
 
             return(
-              <>
+              <React.Fragment key={record.id}>
                 <div key={record.id} id={record.id} className='child hidden px-6'>
                   <div style={divStyle} className='flex flex-col justify-between h-[280px] bg-cover bg-no-repeat bg-center'>
                     <div id='imageButton' onClick={handleClick} className='pt-4 pl-4 cursor-pointer'>
@@ -110,7 +110,7 @@ function Gallery() {
                       </div>
                     </div>
                     
-              </>
+              </React.Fragment>
             )
           })
         }
@@ -174,7 +174,7 @@ function Gallery() {
             }
 
             return(
-              <>
+              
                 
                 <div key={record.id} id={footerId} className='footer hidden items-center justify-between '>
                   <div id="lineContainer" className='flex'>
@@ -204,7 +204,7 @@ function Gallery() {
                     </div>
                   </div>
                 </div>
-              </>
+              
             )
           })
         }
