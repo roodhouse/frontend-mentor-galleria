@@ -24,14 +24,14 @@ function Gallery() {
               document.getElementById('mainWrapper').scrollIntoView()
               document.getElementById('galleryContainer').classList.add('hidden')
               document.getElementById('profileContainer').classList.remove('hidden')
-              document.getElementById(record.id).classList.remove('hidden')
+              document.getElementById(record.id+'profile').classList.remove('hidden')
               document.getElementById('footerContainer').classList.remove('hidden')
               document.getElementById(record.id+'footer').classList.remove('hidden')
               document.getElementById('button').firstChild.innerHTML = 'Stop Slideshow'
             }
 
             return(
-              <div key={record.name} style={divStyle} onClick={handleClick} className='w-[327px] mb-6 pl-8 pr-[49px] pb-8 flex flex-col justify-end md:mb-10 md:ml-10 md:w-[324px]' >
+              <div key={record.name} id={record.id} style={divStyle} onClick={handleClick} className='w-[327px] mb-6 pl-8 pr-[49px] pb-8 flex flex-col justify-end md:mb-10 md:ml-10 md:w-[324px]' >
                 <div className='name text-white text-2xl leading-normal font-bold mb-[7px]'>
                   <h2>{record.name}</h2>
                 </div>
@@ -66,7 +66,7 @@ function Gallery() {
 
             return(
               <React.Fragment key={record.id}>
-                <div key={record.id} id={record.id} className='child hidden px-6'>
+                <div key={record.id} id={record.id+'profile'} className='child hidden px-6'>
                   <div style={divStyle} className='flex flex-col justify-between h-[280px] bg-cover bg-no-repeat bg-center'>
                     <div id='imageButton' onClick={handleClick} className='pt-4 pl-4 cursor-pointer'>
                       <button className='flex items-center text-white uppercase px-4 py-[14px] bg-black opacity-75 hover:bg-darkGray'>
@@ -137,8 +137,8 @@ function Gallery() {
                 
                 currentIndex = currentIndex.toString()
                 previousIndex = previousIndex.toString()
-                let currentEl = document.getElementById(Data[currentIndex].id)
-                let previousEl = document.getElementById(Data[previousIndex].id)
+                let currentEl = document.getElementById(Data[currentIndex].id+'profile')
+                let previousEl = document.getElementById(Data[previousIndex].id+'profile')
                 
                 currentEl.classList.add('hidden')
                 previousEl.classList.remove('hidden')
@@ -160,8 +160,8 @@ function Gallery() {
 
                 currentIndex = currentIndex.toString()
                 nextIndex = nextIndex.toString()
-                let currentEl = document.getElementById(Data[currentIndex].id)
-                let nextEl = document.getElementById(Data[nextIndex].id)
+                let currentEl = document.getElementById(Data[currentIndex].id+'profile')
+                let nextEl = document.getElementById(Data[nextIndex].id+'profile')
                 
                 currentEl.classList.add('hidden')
                 nextEl.classList.remove('hidden')

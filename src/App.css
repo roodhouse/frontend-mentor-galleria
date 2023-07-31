@@ -1,0 +1,105 @@
+@media (min-width: 768px) {
+
+    #galleryContainer {
+        height: 2840px;
+    }
+
+    #three, #five, #seven, #nine, #eleven, #tweleve, #thirteen {
+        position: relative;
+        bottom: 150px;
+    }
+
+     #ten {
+        bottom: 345px;
+    }
+
+    #six {
+        position: relative;
+        bottom: 35px;
+    }
+
+    #eight {
+        position: relative;
+        bottom: 95px;
+    }
+
+    #ten {
+        position: relative;
+    }
+
+    #eleven, #thirteen {
+        bottom: 505px;
+    }
+
+    #fourteen {
+        position: relative;
+        bottom: 320px;
+    }
+
+    #fifteen {
+        position: relative;
+        bottom: 700px;
+        left: 365px;
+    }
+
+    #one {
+        order: 1;
+    }
+
+    #two {
+        order: 2;
+    }
+
+    #three {
+        order: 3;
+    }
+
+    #four {
+        order: 4;
+    }
+
+    #five {
+        order: 5;
+    }
+
+    #six {
+        order: 6;
+    }
+
+    #seven {
+        order: 7;
+    }
+
+    #eight {
+        order: 8;
+    }
+
+    #nine {
+        order: 9;
+    }
+
+    #ten {
+        order: 10;
+    }
+
+    #eleven {
+        order: 12;
+    }
+
+    #tweleve {
+        order: 11;
+    }
+
+    #thirteen {
+        order: 14;
+    }
+
+    #fourteen {
+        order: 13;
+    }
+
+    #fifteen {
+        order: 15;
+    }
+  
+  }
