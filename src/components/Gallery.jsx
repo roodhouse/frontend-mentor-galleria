@@ -25,7 +25,7 @@ function Gallery() {
               document.getElementById('profileContainer').classList.remove('hidden', 'md:hidden')
               document.getElementById(record.id+'profile').classList.remove('hidden', 'md:hidden')
               document.getElementById('footerContainer').classList.remove('hidden')
-              document.getElementById(record.id+'footer').classList.remove('hidden')
+              document.getElementById(record.id+'footer').classList.remove('hidden', 'md:hidden')
               document.getElementById('button').firstChild.innerHTML = 'Stop Slideshow'
             }
 
@@ -76,7 +76,7 @@ function Gallery() {
                 `}
                 </style>
                 <div key={record.id} id={record.id+'profile'} className='child hidden md:hidden px-6 md:px-10 md:flex md:flex-wrap'>
-                  <div id={record.id+'img'} className='flex flex-col justify-between h-[280px] bg-cover bg-no-repeat bg-center md:w-[475px] md:h-[560px]'>
+                  <div id={record.id+'img'} className='flex flex-col justify-between h-[280px] bg-cover bg-no-repeat bg-center md:w-[475px] md:h-[560px] md:mb-16'>
                     <div id='imageButton' onClick={handleClick} className='pt-4 pl-4 cursor-pointer md:order-2 md:pb-4'>
                       <button className='flex items-center text-white uppercase px-4 py-[14px] bg-black opacity-75 hover:bg-darkGray'>
                         <div id="imgButtonContainer" className='mr-[14px]'>
@@ -89,10 +89,10 @@ function Gallery() {
                     </div>
                     {/* profile picture name */}
                     <div id="artistSection">
-                      <div id='artistWork' className='text-black bg-white px-6 py-6 text-2xl leading-[29px] font-bold mr-[47px] pb-2 md:order-1 md:min-h-[128px] md:w-[445px] md:pl-[82px] md:ml-[243px] md:pt-0 md:pb-6 md:mr-0 md:pr-0 md:text-[56px] md:leading-[64px]'>
+                      <div id='artistWork' className='text-black bg-white px-6 py-6 text-2xl leading-[29px] font-bold mr-[47px] pb-2 md:order-1 md:w-[428px] md:pl-[65px] md:ml-[243px] md:pt-0 md:pb-6 md:mr-0 md:pr-0 md:text-[56px] md:leading-[64px]'>
                         <h1 >{record.name}</h1>
                       </div>
-                      <div id='artistName'className='hidden md:block md:text-darkGray md:bg-white md:text-[15px] md:leading-normal md:font-normal md:ml-[243px] md:pl-[82px] md:pb-[67px]'>
+                      <div id='artistName'className='hidden md:block md:text-darkGray md:bg-white md:text-[15px] md:leading-normal md:font-normal md:ml-[243px] md:pl-[65px] md:pb-[67px]'>
                         <p>{record.artist.name}</p>
                     </div>
                     </div>
@@ -105,20 +105,20 @@ function Gallery() {
                      <img src={record.artist.image} alt={record.artist.name} />
                     </div>
                     {/* profile art year */}
-                    <div id="artImgYear" className='pl-4 flex'>
+                    <div id="artImgYear" className='pl-4 flex md:pl-0'>
                       {/* profile image of artist */}
                       <div id='artImg' className='w-16 h-16 mr-[9px] md:hidden'>
                         <img src={record.artist.image} alt={record.artist.name} />
                       </div>
                       {/* profile year work was done */}
-                      <div id="artYear" className='text-lightGray text-[100px] font-bold leading-[100px] mt-11 md:mt-0'>
+                      <div id="artYear" className='text-lightGray text-[100px] font-bold leading-[100px] mt-11 md:mt-0 md:text-right md:text-[200px] md:leading-[150px]'>
                         <p>{record.year}</p>
                       </div>
                     </div>
-                    <div id="artCopy" className='text-darkGray text-sm leading-7 font-bold mt-[-25px] mb-[68px]'>
+                    <div id="artCopy" className='text-darkGray text-sm leading-7 font-bold mt-[-25px] mb-[68px] md:pl-[115px] md:pr-[117px] md:mt-[-75px] md:mb-10'>
                       <p>{record.description}</p>
                     </div>
-                    <div id="source" className='uppercase mb-[68px] text-darkGray text-[9px] font-bold leading-normal tracking-[1.929px] underline'>
+                    <div id="source" className='uppercase mb-[68px] text-darkGray text-[9px] font-bold leading-normal tracking-[1.929px] underline md:pl-[115px] md:mb-[53px]'>
                       <a href={record.source}>Go to source</a>
                     </div>
                 </div>
@@ -203,25 +203,25 @@ function Gallery() {
                     <div id="darkLine" style={darkLine} className='h-[1px] bg-black' />
                     <div id="lightLine" style={lightLine} className='h-[1px] bg-medGray' />
                   </div>
-                  <div id="completeFooter" className='flex justify-between pr-6 pb-4 pt-6'>
-                    <div id="footerDetails" className='px-6'>
-                      <div id="footerName" className='mb-[9px] text-black text-sm leading-normal font-bold'>
+                  <div id="completeFooter" className='flex justify-between pr-6 pb-4 pt-6 md:pb-6 md:items-center md:pr-10'>
+                    <div id="footerDetails" className='px-6 md:pl-10'>
+                      <div id="footerName" className='mb-[9px] text-black text-sm leading-normal font-bold md:text-lg md:leading-normal'>
                         <p>{record.name}</p>
                       </div>
-                      <div id="footAuthor" className='text-black text-[10px] font-normal leading-normal opacity-75'>
+                      <div id="footAuthor" className='text-black text-[10px] font-normal leading-normal opacity-75 md:text-[13px]'>
                         <p>{record.artist.name}</p>
                       </div>
                     </div>
-                    <div id="footerIcons" className='flex justify-between w-[56px]'>
+                    <div id="footerIcons" className='flex justify-between w-[56px] md:w-[90px]'>
                       <div id="iconLeft" onClick={backClick}>
                         <img src={
                           record.id === 'one' ? BackDisabled : BackButton
-                        } alt="button" className='h-4' /> 
+                        } alt="button" className='h-4 md:h-6' /> 
                       </div>
                       <div id="iconRight" onClick={forwardClick}>
                         <img src={
                           record.id === 'fifteen' ? ForwardDisabled : ForwardButton
-                        } alt="button" className='h-4' />
+                        } alt="button" className='h-4 md:h-6' />
                       </div>
                     </div>
                   </div>

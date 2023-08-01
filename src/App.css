@@ -101,5 +101,146 @@
     #fifteen {
         order: 15;
     }
+
+    #onefooter #lineContainer #darkLine {
+        width: 52px !important;
+    }
+
+    #onefooter #lineContainer #lightLine {
+        width: 716px !important;
+    }
+
+    #twofooter #lineContainer #darkLine {
+        width: 104px !important;
+    }
+
+    #twofooter #lineContainer #lightLine {
+        width: 664px !important;
+    }
+
+    #threefooter #lineContainer #darkLine {
+        width: 156px !important;
+    }
+
+    #threefooter #lineContainer #lightLine {
+        width: 612px !important;
+    }
+
+    #fourfooter #lineContainer #darkLine {
+        width: 208px !important;
+    }
+
+    #fourfooter #lineContainer #lightLine {
+        width: 560px !important;
+    }
+
+    #fivefooter #lineContainer #darkLine {
+        width: 260px !important;
+    }
+
+    #fivefooter #lineContainer #lightLine {
+        width: 508px !important;
+    }
+
+    #sixfooter #lineContainer #darkLine {
+        width: 312px !important;
+    }
+
+    #sixfooter #lineContainer #lightLine {
+        width: 456px !important;
+    }
+
+    #sevenfooter #lineContainer #darkLine {
+        width: 364px !important;
+    }
+
+    #sevenfooter #lineContainer #lightLine {
+        width: 404px !important;
+    }
+
+    #eightfooter #lineContainer #darkLine {
+        width: 416px !important;
+    }
+
+    #eightfooter #lineContainer #lightLine {
+        width: 352px !important;
+    }
+
+    #ninefooter #lineContainer #darkLine {
+        width: 468px !important;
+    }
+
+    #ninefooter #lineContainer #lightLine {
+        width: 300px !important;
+    }
+
+    #tenfooter #lineContainer #darkLine {
+        width: 520px !important;
+    }
+
+    #tenfooter #lineContainer #lightLine {
+        width: 248px !important;
+    }
+
+    #elevenfooter #lineContainer #darkLine {
+        width: 572px !important;
+    }
+
+    #elevenfooter #lineContainer #lightLine {
+        width: 196px !important;
+    }
+
+    #twelevefooter #lineContainer #darkLine {
+        width: 624px !important;
+    }
+
+    #twelevefooter #lineContainer #lightLine {
+        width: 145px !important;
+    }
+
+    #thirteenfooter #lineContainer #darkLine {
+        width: 676px !important;
+    }
+
+    #thirteenfooter #lineContainer #lightLine {
+        width: 92px !important;
+    }
+
+    #fourteenfooter #lineContainer #darkLine {
+        width: 728px !important;
+    }
+
+    #fourteenfooter #lineContainer #lightLine {
+        width: 40px !important;
+    }
+
+    #fifteenfooter #lineContainer #darkLine {
+        width: 768px !important;
+    }
+
+    #fifteenfooter #lineContainer #lightLine {
+        width: 0px !important;
+    }
+
+    #twoprofile #picOfArtist, #fiveprofile #picOfArtist, #sixprofile #picOfArtist, #eightprofile #picOfArtist {
+        margin-top: 305px;
+    }
+
+    #threeprofile #picOfArtist, #fifteenprofile #picOfArtist {
+        margin-top: 177px;
+    }
+
+    #sevenprofile #sevenimg #artistSection #artistWork {
+        width: 431px;
+    }
+
+    #fourteenprofile #fourteenimg #artistSection #artistWork {
+        width: 373px;
+    }
+
+    #fifteenprofile #fifteenimg #artistSection #artistName {
+        width: 248px;
+    }
+
   
   }
