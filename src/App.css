@@ -373,6 +373,51 @@
     #fifteenClose {
         padding-right: 91px;
     }
+  }
 
-  
+  @media (min-width: 1024px) {
+    #galleryContainer #one, #galleryContainer #two, #galleryContainer #three, #galleryContainer #four {
+        position: static;
+    }
+
+    #galleryContainer #five, #galleryContainer #eight {
+        bottom: 357px;
+    }
+
+    #galleryContainer #six {
+        bottom: 207px;
+    }
+
+    #galleryContainer #seven {
+        bottom: 322px;
+    }
+
+    #galleryContainer #nine {
+        bottom: 724px;
+    }
+
+    #galleryContainer #ten {
+        bottom: 634px;
+    }
+
+    #galleryContainer #eleven {
+        bottom: 814px;
+    }
+
+    #galleryContainer #tweleve {
+        bottom: 529px;
+    }
+
+    #galleryContainer #thirteen {
+        bottom: 1010px;
+    }
+
+    #galleryContainer #fourteen {
+        bottom: 940px;
+    }
+
+    #galleryContainer #fifteen {
+        bottom: 905px;
+        left: 0;
+    }
   }
