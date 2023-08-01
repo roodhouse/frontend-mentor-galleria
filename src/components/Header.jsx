@@ -8,26 +8,26 @@ function Header() {
     let slideshow = document.getElementById('button').firstChild
       Data.map( record => {
         if (slideshow.innerHTML === 'Start Slideshow') {
-            document.getElementById('galleryContainer').classList.add('hidden')
-            document.getElementById('profileContainer').classList.remove('hidden')
-            document.getElementById('one').classList.remove('hidden')
+            document.getElementById('galleryContainer').classList.add('hidden', 'md:hidden')
+            document.getElementById('profileContainer').classList.remove('hidden', 'md:hidden')
+            document.getElementById('oneprofile').classList.remove('hidden', 'md:hidden')
             document.getElementById('footerContainer').classList.remove('hidden')
             document.getElementById('onefooter').classList.remove('hidden')
             document.getElementById('button').firstChild.innerHTML = 'Stop Slideshow'
         } else if (slideshow.innerHTML === 'Stop Slideshow') {
          
-            document.getElementById('galleryContainer').classList.remove('hidden')
-            document.getElementById('profileContainer').classList.add('hidden')
-            document.getElementById('one').classList.add('hidden')
+            document.getElementById('galleryContainer').classList.remove('hidden', 'md:hidden')
+            document.getElementById('profileContainer').classList.add('hidden', 'md:hidden')
+            document.getElementById('oneprofile').classList.add('hidden', 'md:hidden')
             document.getElementById('footerContainer').classList.add('hidden')
             document.getElementById('onefooter').classList.add('hidden')
             document.querySelectorAll('.child').forEach((kid)=> {
-              kid.classList.add('hidden')
+              kid.classList.add('hidden', 'md:hidden')
             })
             document.querySelectorAll('.footer').forEach((foot)=> {
               foot.classList.add('hidden')
             })
-            document.getElementById(record.id).classList.add('hidden')
+            document.getElementById(record.id+'profile').classList.add('hidden')
             document.getElementById(record.id+'footer').classList.add('hidden')
             document.getElementById('button').firstChild.innerHTML = 'Start Slideshow'
         }

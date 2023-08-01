@@ -1,0 +1,378 @@
+#oneClose, #twoClose, #threeClose, #fourClose, #fiveClose, #sixClose, #sevenClose,
+#eightClose, #nineClose, #tenClose, #elevenClose, #tweleveClose, #thirteenClose, 
+#fourteenClose, #fifteenClose {
+    padding-right: 24px;
+}
+
+#onelargeLightBoxImg, #twolargeLightBoxImg, #threelargeLightBoxImg, #fourlargeLightBoxImg, #fivelargeLightBoxImg, 
+#sixlargeLightBoxImg, #sevenlargeLightBoxImg, #eightlargeLightBoxImg, #ninelargeLightBoxImg, #tenlargeLightBoxImg,
+#elevenlargeLightBoxImg, #twelevelargeLightBoxImg, #thirteenlargeLightBoxImg, #fourteenlargeLightBoxImg,
+#fifteenlargeLightBoxImg {
+        width: 327px;
+}
+
+#onelargeLightBoxImg {
+    height: 263px;
+}
+
+#twolargeLightBoxImg {
+    height: 449px;
+}
+
+#threelargeLightBoxImg {
+    height: 185px;
+}
+
+#fourlargeLightBoxImg {
+    height: 406px;
+}
+
+#fourlargeLightBoxImg, #sevenlargeLightBoxImg, #twelevelargeLightBoxImg {
+    height: 389px;
+}
+
+#ninelargeLightBoxImg {
+    height: 433px;
+}
+
+#thirteenlargeLightBoxImg, #fourteenlargeLightBoxImg {
+    height: 457px;
+}
+
+#fifteenlargeLightBoxImg {
+    height: 397px;
+}
+
+@media (min-width: 768px) {
+
+    #galleryContainer {
+        height: 2840px;
+    }
+
+    #three, #five, #seven, #nine, #eleven, #tweleve, #thirteen {
+        position: relative;
+        bottom: 150px;
+    }
+
+     #ten {
+        bottom: 345px;
+    }
+
+    #six {
+        position: relative;
+        bottom: 35px;
+    }
+
+    #eight {
+        position: relative;
+        bottom: 95px;
+    }
+
+    #ten {
+        position: relative;
+    }
+
+    #eleven, #thirteen {
+        bottom: 505px;
+    }
+
+    #fourteen {
+        position: relative;
+        bottom: 320px;
+    }
+
+    #fifteen {
+        position: relative;
+        bottom: 700px;
+        left: 365px;
+    }
+
+    #one {
+        order: 1;
+    }
+
+    #two {
+        order: 2;
+    }
+
+    #three {
+        order: 3;
+    }
+
+    #four {
+        order: 4;
+    }
+
+    #five {
+        order: 5;
+    }
+
+    #six {
+        order: 6;
+    }
+
+    #seven {
+        order: 7;
+    }
+
+    #eight {
+        order: 8;
+    }
+
+    #nine {
+        order: 9;
+    }
+
+    #ten {
+        order: 10;
+    }
+
+    #eleven {
+        order: 12;
+    }
+
+    #tweleve {
+        order: 11;
+    }
+
+    #thirteen {
+        order: 14;
+    }
+
+    #fourteen {
+        order: 13;
+    }
+
+    #fifteen {
+        order: 15;
+    }
+
+    #onefooter #lineContainer #darkLine {
+        width: 52px !important;
+    }
+
+    #onefooter #lineContainer #lightLine {
+        width: 716px !important;
+    }
+
+    #twofooter #lineContainer #darkLine {
+        width: 104px !important;
+    }
+
+    #twofooter #lineContainer #lightLine {
+        width: 664px !important;
+    }
+
+    #threefooter #lineContainer #darkLine {
+        width: 156px !important;
+    }
+
+    #threefooter #lineContainer #lightLine {
+        width: 612px !important;
+    }
+
+    #fourfooter #lineContainer #darkLine {
+        width: 208px !important;
+    }
+
+    #fourfooter #lineContainer #lightLine {
+        width: 560px !important;
+    }
+
+    #fivefooter #lineContainer #darkLine {
+        width: 260px !important;
+    }
+
+    #fivefooter #lineContainer #lightLine {
+        width: 508px !important;
+    }
+
+    #sixfooter #lineContainer #darkLine {
+        width: 312px !important;
+    }
+
+    #sixfooter #lineContainer #lightLine {
+        width: 456px !important;
+    }
+
+    #sevenfooter #lineContainer #darkLine {
+        width: 364px !important;
+    }
+
+    #sevenfooter #lineContainer #lightLine {
+        width: 404px !important;
+    }
+
+    #eightfooter #lineContainer #darkLine {
+        width: 416px !important;
+    }
+
+    #eightfooter #lineContainer #lightLine {
+        width: 352px !important;
+    }
+
+    #ninefooter #lineContainer #darkLine {
+        width: 468px !important;
+    }
+
+    #ninefooter #lineContainer #lightLine {
+        width: 300px !important;
+    }
+
+    #tenfooter #lineContainer #darkLine {
+        width: 520px !important;
+    }
+
+    #tenfooter #lineContainer #lightLine {
+        width: 248px !important;
+    }
+
+    #elevenfooter #lineContainer #darkLine {
+        width: 572px !important;
+    }
+
+    #elevenfooter #lineContainer #lightLine {
+        width: 196px !important;
+    }
+
+    #twelevefooter #lineContainer #darkLine {
+        width: 624px !important;
+    }
+
+    #twelevefooter #lineContainer #lightLine {
+        width: 145px !important;
+    }
+
+    #thirteenfooter #lineContainer #darkLine {
+        width: 676px !important;
+    }
+
+    #thirteenfooter #lineContainer #lightLine {
+        width: 92px !important;
+    }
+
+    #fourteenfooter #lineContainer #darkLine {
+        width: 728px !important;
+    }
+
+    #fourteenfooter #lineContainer #lightLine {
+        width: 40px !important;
+    }
+
+    #fifteenfooter #lineContainer #darkLine {
+        width: 768px !important;
+    }
+
+    #fifteenfooter #lineContainer #lightLine {
+        width: 0px !important;
+    }
+
+    #twoprofile #picOfArtist, #fiveprofile #picOfArtist, #sixprofile #picOfArtist, #eightprofile #picOfArtist {
+        margin-top: 305px;
+    }
+
+    #threeprofile #picOfArtist, #fifteenprofile #picOfArtist {
+        margin-top: 177px;
+    }
+
+    #sevenprofile #sevenimg #artistSection #artistWork {
+        width: 431px;
+    }
+
+    #fourteenprofile #fourteenimg #artistSection #artistWork {
+        width: 373px;
+    }
+
+    #fifteenprofile #fifteenimg #artistSection #artistName {
+        width: 248px;
+    }
+
+    #onelargeLightBoxImg, #threelargeLightBoxImg, #sixlargeLightBoxImg, #eightlargeLightBoxImg, #tenlargeLightBoxImg,
+    #elevenlargeLightBoxImg {
+        width: 670px;
+    }
+
+    #onelargeLightBoxImg {
+        height: 520px;
+    }
+
+    #sixlargeLightBoxImg {
+        height: 589px;
+    }
+
+    #threelargeLightBoxImg {
+        height: 381px;
+    }
+
+    #eightlargeLightBoxImg {
+        height: 431px;
+    }
+
+    #tenlargeLightBoxImg {
+        height: 504px;
+    }
+
+    #elevenlargeLightBoxImg {
+        height: 549px;
+    }
+
+    #oneClose, #threeClose, #sixClose, #eightClose, #tenClose, #elevenClose {
+        padding-right: 49px;
+    }
+
+    #twolargeLightBoxImg {
+        width: 520px;
+    }
+
+    #fourlargeLightBoxImg {
+        width: 573px;
+    }
+
+    #fivelargeLightBoxImg, #sevenlargeLightBoxImg, #twelevelargeLightBoxImg {
+        width: 597px;
+    }
+
+    #ninelargeLightBoxImg {
+        width: 537px;
+    }
+
+    #twolargeLightBoxImg, #fourlargeLightBoxImg, #fivelargeLightBoxImg, #sevenlargeLightBoxImg, 
+    #ninelargeLightBoxImg, #twelevelargeLightBoxImg, #thirteenlargeLightBoxImg, 
+    #fourteenlargeLightBoxImg, #fifteenlargeLightBoxImg {
+        height: 712px;
+    }
+
+    #twoClose {
+        padding-right: 124px;
+    }
+
+    #fourClose {
+        padding-right: 97px;
+    }
+
+    #fiveClose, #sevenClose, #tweleveClose {
+        padding-right: 85px;
+    }
+
+    #nineClose {
+        padding-right: 115px;
+    }
+
+    #thirteenClose, #fourteenClose {
+        padding-right: 129px;
+    }
+
+    #thirteenlargeLightBoxImg, #fourteenlargeLightBoxImg {
+        width: 509px;
+    }
+
+    #fifteenlargeLightBoxImg {
+        width: 585px;
+    }
+
+    #fifteenClose {
+        padding-right: 91px;
+    }
+
+  
+  }
