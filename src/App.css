@@ -242,5 +242,85 @@
         width: 248px;
     }
 
+    #onelargeLightBoxImg, #threelargeLightBoxImg, #sixlargeLightBoxImg, #eightlargeLightBoxImg, #tenlargeLightBoxImg,
+    #elevenlargeLightBoxImg {
+        width: 670px;
+    }
+
+    #onelargeLightBoxImg {
+        height: 520px;
+    }
+
+    #sixlargeLightBoxImg {
+        height: 589px;
+    }
+
+    #threelargeLightBoxImg {
+        height: 381px;
+    }
+
+    #eightlargeLightBoxImg {
+        height: 431px;
+    }
+
+    #tenlargeLightBoxImg {
+        height: 504px;
+    }
+
+    #elevenlargeLightBoxImg {
+        height: 549px;
+    }
+
+    #oneClose, #threeClose, #sixClose, #eightClose, #tenClose, #elevenClose {
+        align-self: flex-end;
+        padding-right: 49px;
+    }
+
+    #twolargeLightBoxImg {
+        width: 520px;
+    }
+
+    #fourlargeLightBoxImg {
+        width: 573px;
+    }
+
+    #fivelargeLightBoxImg {
+        width: 597px;
+    }
+
+    #twolargeLightBoxImg, #fourlargeLightBoxImg, #fivelargeLightBoxImg {
+        height: 712px;
+    }
+
+    #twoClose {
+        align-self: flex-end;
+        padding-right: 124px;
+    }
+
+    #fourClose {
+        align-self: flex-end;
+        padding-right: 97px;
+    }
+
+    #fiveClose, #sevenClose, #tweleveClose {
+        align-self: flex-end;
+        padding-right: 85px;
+    }
+
+    #nineClose {
+        align-self: flex-end;
+        padding-right: 115px;
+    }
+
+    #thirteenClose, #fourteenClose {
+        align-self: flex-end;
+        padding-right: 129px;
+    }
+
+    #fifteenClose {
+        align-self: flex-end;
+        padding-right: 91px;
+    }
+
   
   }
