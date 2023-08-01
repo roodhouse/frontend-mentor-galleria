@@ -111,7 +111,7 @@ function Gallery() {
                         <img src={record.artist.image} alt={record.artist.name} />
                       </div>
                       {/* profile year work was done */}
-                      <div id="artYear" className='text-lightGray text-[100px] font-bold leading-[100px] mt-11'>
+                      <div id="artYear" className='text-lightGray text-[100px] font-bold leading-[100px] mt-11 md:mt-0'>
                         <p>{record.year}</p>
                       </div>
                     </div>
