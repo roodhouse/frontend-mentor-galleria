@@ -3,7 +3,6 @@ import Header from './components/Header'
 import Gallery from './components/Gallery'
 
 // dtView
-// prevent scroll when lightbox is open
 
 function App() {
   
