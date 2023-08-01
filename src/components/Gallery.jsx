@@ -6,8 +6,6 @@ import BackDisabled from '../assets/shared/icon-back-button-disabled.svg'
 import ForwardButton from '../assets/shared/icon-next-button.svg'
 import ForwardDisabled from '../assets/shared/icon-next-button-disabled.svg'
 
-// need to step back and fix the author and title divs to work with each other or combine them
-
 function Gallery() {
 
   return (
@@ -23,9 +21,9 @@ function Gallery() {
 
             function handleClick(e) {
               document.getElementById('mainWrapper').scrollIntoView()
-              document.getElementById('galleryContainer').classList.add('hidden','md:hidden')
-              document.getElementById('profileContainer').classList.remove('hidden')
-              document.getElementById(record.id+'profile').classList.remove('hidden')
+              document.getElementById('galleryContainer').classList.add('hidden', 'md:hidden')
+              document.getElementById('profileContainer').classList.remove('hidden', 'md:hidden')
+              document.getElementById(record.id+'profile').classList.remove('hidden', 'md:hidden')
               document.getElementById('footerContainer').classList.remove('hidden')
               document.getElementById(record.id+'footer').classList.remove('hidden')
               document.getElementById('button').firstChild.innerHTML = 'Stop Slideshow'
@@ -77,7 +75,7 @@ function Gallery() {
                 
                 `}
                 </style>
-                <div key={record.id} id={record.id+'profile'} className='child hidden px-6 md:px-10'>
+                <div key={record.id} id={record.id+'profile'} className='child hidden md:hidden px-6 md:px-10 md:flex md:flex-wrap'>
                   <div id={record.id+'img'} className='flex flex-col justify-between h-[280px] bg-cover bg-no-repeat bg-center md:w-[475px] md:h-[560px]'>
                     <div id='imageButton' onClick={handleClick} className='pt-4 pl-4 cursor-pointer md:order-2 md:pb-4'>
                       <button className='flex items-center text-white uppercase px-4 py-[14px] bg-black opacity-75 hover:bg-darkGray'>
@@ -90,18 +88,29 @@ function Gallery() {
                       </button>
                     </div>
                     {/* profile picture name */}
-                    <div className='text-black bg-white px-6 py-6 text-2xl leading-[29px] font-bold mr-[47px] pb-2 md:order-1 md:min-h-[128px] md:w-[445px] md:pl-[82px] md:ml-[243px] md:pt-0 md:pb-6 md:mr-0 md:pr-0 md:text-[56px] md:leading-[64px]'>
-                      <h1 >{record.name}</h1>
+                    <div id="artistSection">
+                      <div id='artistWork' className='text-black bg-white px-6 py-6 text-2xl leading-[29px] font-bold mr-[47px] pb-2 md:order-1 md:min-h-[128px] md:w-[445px] md:pl-[82px] md:ml-[243px] md:pt-0 md:pb-6 md:mr-0 md:pr-0 md:text-[56px] md:leading-[64px]'>
+                        <h1 >{record.name}</h1>
+                      </div>
+                      <div id='artistName'className='hidden md:block md:text-darkGray md:bg-white md:text-[15px] md:leading-normal md:font-normal md:ml-[243px] md:pl-[82px] md:pb-[67px]'>
+                        <p>{record.artist.name}</p>
+                    </div>
                     </div>
                   </div>
                   {/* profile artist name */}
-                    <div className='text-darkGray bg-white px-6 text-[15px] leading-normal font-normal mr-[47px] mb-6 md:ml-[243px] md:pl-[82px] md:mt-[-408px] md:pr-0 md:mb-[408px] md:pb-[67px]'>
+                    <div className='text-darkGray bg-white px-6 text-[15px] leading-normal font-normal mr-[47px] mb-6 md:hidden'>
                       <p>{record.artist.name}</p>
                     </div>
+                    <div id="picOfArtist" className='hidden md:block md:w-32 md:h-32 md:ml-[30px] md:mt-[242px]'>
+                     <img src={record.artist.image} alt={record.artist.name} />
+                    </div>
+                    {/* profile art year */}
                     <div id="artImgYear" className='pl-4 flex'>
-                      <div id='artImg' className='w-16 h-16 mr-[9px]'>
+                      {/* profile image of artist */}
+                      <div id='artImg' className='w-16 h-16 mr-[9px] md:hidden'>
                         <img src={record.artist.image} alt={record.artist.name} />
                       </div>
+                      {/* profile year work was done */}
                       <div id="artYear" className='text-lightGray text-[100px] font-bold leading-[100px] mt-11'>
                         <p>{record.year}</p>
                       </div>
@@ -153,13 +162,13 @@ function Gallery() {
                 let currentEl = document.getElementById(Data[currentIndex].id+'profile')
                 let previousEl = document.getElementById(Data[previousIndex].id+'profile')
                 
-                currentEl.classList.add('hidden')
-                previousEl.classList.remove('hidden')
+                currentEl.classList.add('hidden', 'md:hidden')
+                previousEl.classList.remove('hidden', 'md:hidden')
 
                 let currentFooter = document.getElementById(Data[currentIndex].id+'footer')
                 let previousFooter = document.getElementById(Data[previousIndex].id+'footer')
-                currentFooter.classList.add('hidden')
-                previousFooter.classList.remove('hidden')
+                currentFooter.classList.add('hidden', 'md:hidden')
+                previousFooter.classList.remove('hidden', 'md:hidden')
               }
             }
 
@@ -176,13 +185,13 @@ function Gallery() {
                 let currentEl = document.getElementById(Data[currentIndex].id+'profile')
                 let nextEl = document.getElementById(Data[nextIndex].id+'profile')
                 
-                currentEl.classList.add('hidden')
-                nextEl.classList.remove('hidden')
+                currentEl.classList.add('hidden', 'md:hidden')
+                nextEl.classList.remove('hidden', 'md:hidden')
 
                 let currentFooter = document.getElementById(Data[currentIndex].id+'footer')
                 let nextFooter = document.getElementById(Data[nextIndex].id+'footer')
-                currentFooter.classList.add('hidden')
-                nextFooter.classList.remove('hidden')
+                currentFooter.classList.add('hidden', 'md:hidden')
+                nextFooter.classList.remove('hidden', 'md:hidden')
               }
             }
 
