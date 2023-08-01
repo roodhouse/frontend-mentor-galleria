@@ -1,3 +1,48 @@
+#oneClose, #twoClose, #threeClose, #fourClose, #fiveClose, #sixClose, #sevenClose,
+#eightClose, #nineClose, #tenClose, #elevenClose, #tweleveClose, #thirteenClose, 
+#fourteenClose, #fifteenClose {
+    padding-right: 24px;
+}
+
+#onelargeLightBoxImg, #twolargeLightBoxImg, #threelargeLightBoxImg, #fourlargeLightBoxImg, #fivelargeLightBoxImg, 
+#sixlargeLightBoxImg, #sevenlargeLightBoxImg, #eightlargeLightBoxImg, #ninelargeLightBoxImg, #tenlargeLightBoxImg,
+#elevenlargeLightBoxImg, #twelevelargeLightBoxImg, #thirteenlargeLightBoxImg, #fourteenlargeLightBoxImg,
+#fifteenlargeLightBoxImg {
+        width: 327px;
+}
+
+#onelargeLightBoxImg {
+    height: 263px;
+}
+
+#twolargeLightBoxImg {
+    height: 449px;
+}
+
+#threelargeLightBoxImg {
+    height: 185px;
+}
+
+#fourlargeLightBoxImg {
+    height: 406px;
+}
+
+#fourlargeLightBoxImg, #sevenlargeLightBoxImg, #twelevelargeLightBoxImg {
+    height: 389px;
+}
+
+#ninelargeLightBoxImg {
+    height: 433px;
+}
+
+#thirteenlargeLightBoxImg, #fourteenlargeLightBoxImg {
+    height: 457px;
+}
+
+#fifteenlargeLightBoxImg {
+    height: 397px;
+}
+
 @media (min-width: 768px) {
 
     #galleryContainer {
@@ -272,7 +317,6 @@
     }
 
     #oneClose, #threeClose, #sixClose, #eightClose, #tenClose, #elevenClose {
-        align-self: flex-end;
         padding-right: 49px;
     }
 
@@ -284,41 +328,49 @@
         width: 573px;
     }
 
-    #fivelargeLightBoxImg {
+    #fivelargeLightBoxImg, #sevenlargeLightBoxImg, #twelevelargeLightBoxImg {
         width: 597px;
     }
 
-    #twolargeLightBoxImg, #fourlargeLightBoxImg, #fivelargeLightBoxImg {
+    #ninelargeLightBoxImg {
+        width: 537px;
+    }
+
+    #twolargeLightBoxImg, #fourlargeLightBoxImg, #fivelargeLightBoxImg, #sevenlargeLightBoxImg, 
+    #ninelargeLightBoxImg, #twelevelargeLightBoxImg, #thirteenlargeLightBoxImg, 
+    #fourteenlargeLightBoxImg, #fifteenlargeLightBoxImg {
         height: 712px;
     }
 
     #twoClose {
-        align-self: flex-end;
         padding-right: 124px;
     }
 
     #fourClose {
-        align-self: flex-end;
         padding-right: 97px;
     }
 
     #fiveClose, #sevenClose, #tweleveClose {
-        align-self: flex-end;
         padding-right: 85px;
     }
 
     #nineClose {
-        align-self: flex-end;
         padding-right: 115px;
     }
 
     #thirteenClose, #fourteenClose {
-        align-self: flex-end;
         padding-right: 129px;
     }
 
+    #thirteenlargeLightBoxImg, #fourteenlargeLightBoxImg {
+        width: 509px;
+    }
+
+    #fifteenlargeLightBoxImg {
+        width: 585px;
+    }
+
     #fifteenClose {
-        align-self: flex-end;
         padding-right: 91px;
     }
 

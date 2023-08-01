@@ -2,9 +2,6 @@ import './App.css';
 import Header from './components/Header'
 import Gallery from './components/Gallery'
 
-// tabView
-  
-  // need to go back and adjust the small screen size lightbox image
 // dtView
 // prevent scroll when lightbox is open
 

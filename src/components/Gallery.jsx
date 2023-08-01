@@ -123,8 +123,8 @@ function Gallery() {
                     </div>
                 </div>
                     <div id={lightbox} key={lightbox} className='hidden h-screen bg-black opacity-[.85] absolute top-0 left-0 w-full' />
-                    <div id={imageBox} key={imageBox} className='hidden flex flex-col items-end justify-center h-screen absolute top-0 left-0 w-full pr-6 md:pr-[0] md:items-center'>
-                    <div id={record.id+'Close'} className='md:self-end'>
+                    <div id={imageBox} key={imageBox} className='hidden flex flex-col items-center justify-center h-screen absolute top-0 left-0 w-full md:items-center'>
+                    <div id={record.id+'Close'} className='self-end'>
                         <button onClick={handleClose} className='uppercase text-white text-right text-sm font-bold leading-normal tracking-[3px] mb-[33px] md:mb-[41px]' >close</button>
                       </div>
                       <div id='galleryImage'>
