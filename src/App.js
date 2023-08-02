@@ -3,8 +3,8 @@ import Header from './components/Header'
 import Gallery from './components/Gallery'
 
 // dtView
-  // need to adjust the gallery position again
-    // add negative margin to each pic?
+// go through and redo the grid for each view
+// set max width and flex to keep it center
 
 function App() {
   
