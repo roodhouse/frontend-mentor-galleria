@@ -42,7 +42,7 @@ function Gallery() {
           })
         }
       </div>
-      <div id="profileContainer" className='hidden'>
+      <div id="profileContainer" className='hidden xl:mb-[75px]'>
         {
           Data && Data.map( record => {
 
@@ -96,7 +96,7 @@ function Gallery() {
                 
                 `}
                 </style>
-                <div key={record.id} id={record.id+'profile'} className='child hidden md:hidden px-6 md:px-10 md:flex md:flex-wrap xl:px-0 xl:justify-start'>
+                <div key={record.id} id={record.id+'profile'} className='child hidden md:hidden px-6 md:px-10 md:flex md:flex-wrap xl:px-0 xl:justify-between'>
                   <div id={record.id+'img'} className='flex flex-col justify-between h-[280px] bg-cover bg-no-repeat bg-center md:w-[475px] md:h-[560px] md:mb-16'>
                     <div id='imageButton' onClick={handleClick} className='pt-4 pl-4 cursor-pointer md:order-2 md:pb-4'>
                       <button className='flex items-center text-white uppercase px-4 py-[14px] bg-black opacity-75 hover:bg-darkGray'>
@@ -122,11 +122,11 @@ function Gallery() {
                     <div className='text-darkGray bg-white px-6 text-[15px] leading-normal font-normal mr-[47px] mb-6 md:hidden'>
                       <p>{record.artist.name}</p>
                     </div>
-                    <div id="picOfArtist" className='hidden md:block md:w-32 md:h-32 md:ml-[30px] md:mt-[242px] xl:mt-[496px]'>
+                    <div id="picOfArtist" className='hidden md:block md:w-32 md:h-32 md:ml-[30px] md:mt-[242px] xl:mt-[496px] xl:ml-[-251px]'>
                      <img src={record.artist.image} alt={record.artist.name} />
                     </div>
                     {/* profile art year */}
-                    <div id="yearCopy" className='xl:flex'>
+                    <div id="yearCopySource" className='xl:flex xl:flex-col xl:w-[476px]'>
                       <div id="artImgYear" className='pl-4 flex md:pl-0'>
                         {/* profile image of artist */}
                         <div id='artImg' className='w-16 h-16 mr-[9px] md:hidden'>
@@ -137,12 +137,12 @@ function Gallery() {
                           <p>{record.year}</p>
                         </div>
                       </div>
-                      <div id="artCopy" className='text-darkGray text-sm leading-7 font-bold mt-[-25px] mb-[68px] md:pl-[115px] md:pr-[117px] md:mt-[-75px] md:mb-10'>
+                      <div id="artCopy" className='text-darkGray text-sm leading-7 font-bold mt-[-25px] mb-[68px] md:pl-[115px] md:pr-[117px] md:mt-[-75px] md:mb-10 xl:pl-0 xl:mt-[-38px] xl:pr-[130px]'>
                         <p>{record.description}</p>
                       </div>
-                    </div>
-                    <div id="source" className='uppercase mb-[68px] text-darkGray text-[9px] font-bold leading-normal tracking-[1.929px] underline md:pl-[115px] md:mb-[53px]'>
-                      <a href={record.source}>Go to source</a>
+                      <div id="source" className='uppercase mb-[68px] text-darkGray text-[9px] font-bold leading-normal tracking-[1.929px] underline md:pl-[115px] md:mb-[53px] xl:pl-0 xl:mb-0'>
+                        <a href={record.source}>Go to source</a>
+                      </div>
                     </div>
                 </div>
                     <div id={lightbox} key={lightbox} className='hidden h-screen bg-black opacity-[.85] absolute top-0 left-0 w-full' />
