@@ -122,7 +122,7 @@ function Gallery() {
                     <div className='text-darkGray bg-white px-6 text-[15px] leading-normal font-normal mr-[47px] mb-6 md:hidden'>
                       <p>{record.artist.name}</p>
                     </div>
-                    <div id="picOfArtist" className='hidden md:block md:w-32 md:h-32 md:ml-[30px] md:mt-[242px] xl:mt-[496px] xl:ml-[-251px]'>
+                    <div id="picOfArtist" className='hidden md:block md:w-32 md:h-32 md:ml-[30px] md:mt-[242px] xl:!mt-[496px] xl:ml-[-251px]'>
                      <img src={record.artist.image} alt={record.artist.name} />
                     </div>
                     {/* profile art year */}
@@ -137,10 +137,10 @@ function Gallery() {
                           <p>{record.year}</p>
                         </div>
                       </div>
-                      <div id="artCopy" className='text-darkGray text-sm leading-7 font-bold mt-[-25px] mb-[68px] md:pl-[115px] md:pr-[117px] md:mt-[-75px] md:mb-10 xl:pl-0 xl:mt-[-38px] xl:pr-[130px]'>
+                      <div id="artCopy" className='text-darkGray text-sm leading-7 font-bold mt-[-25px] mb-[68px] md:pl-[115px] md:pr-[117px] md:mt-[-75px] md:mb-10 xl:pl-0 xl:mt-[-38px] xl:pr-[127px]'>
                         <p>{record.description}</p>
                       </div>
-                      <div id="source" className='uppercase mb-[68px] text-darkGray text-[9px] font-bold leading-normal tracking-[1.929px] underline md:pl-[115px] md:mb-[53px] xl:pl-0 xl:mb-0'>
+                      <div id="source" className='uppercase mb-[68px] text-darkGray hover:text-black text-[9px] font-bold leading-normal tracking-[1.929px] underline md:pl-[115px] md:mb-[53px] xl:pl-0 xl:mb-0'>
                         <a href={record.source}>Go to source</a>
                       </div>
                     </div>
@@ -239,12 +239,12 @@ function Gallery() {
                       <div id="iconLeft" onClick={backClick}>
                         <img src={
                           record.id === 'one' ? BackDisabled : BackButton
-                        } alt="button" className='h-4 md:h-6' /> 
+                        } alt="button" className='h-4 md:h-6 cursor-pointer' /> 
                       </div>
                       <div id="iconRight" onClick={forwardClick}>
                         <img src={
                           record.id === 'fifteen' ? ForwardDisabled : ForwardButton
-                        } alt="button" className='h-4 md:h-6' />
+                        } alt="button" className='h-4 md:h-6 cursor-pointer' />
                       </div>
                     </div>
                   </div>
