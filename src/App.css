@@ -425,14 +425,13 @@
   @media (min-width: 1440px) {
 
     #galleryWrapper {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     #galleryContainer {
         flex-direction: column;
         height: 1477px;
-        align-items: center;
     }
     .galleryCard {
         width: 310px;
@@ -531,5 +530,13 @@
 
     #fourteen {
         order: 11;
+    }
+
+    .galleryCard {
+        margin-left: 40px;
+    }
+
+    #one, #five, #nine, #tweleve {
+        margin-left: 0px;
     }
   }
