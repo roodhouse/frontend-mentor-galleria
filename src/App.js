@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Gallery from './components/Gallery'
 
 // dtView
+  // check all profiles and make sure they are good
 // go through and redo the grid for each view
 // set max width and flex to keep it center
 

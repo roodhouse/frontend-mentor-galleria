@@ -224,7 +224,7 @@
     }
 
     #tenfooter #lineContainer #lightLine {
-        width: 248px !important;
+        width: 34% !important;
     }
 
     #elevenfooter #lineContainer #darkLine {
@@ -538,5 +538,79 @@
 
     #one, #five, #nine, #tweleve {
         margin-left: 0px;
+    }
+
+    #onelargeLightBoxImg {
+        width: 917px;
+    }
+
+    #threelargeLightBoxImg {
+        width: 1253px;
+    }
+
+    #sixlargeLightBoxImg {
+        width: 809px;
+    }
+
+    #eightlargeLightBoxImg {
+        width: 1107px;
+    }
+
+    #tenlargeLightBoxImg {
+        width: 947px;
+    }
+
+    #elevenlargeLightBoxImg {
+        width: 869px;
+    }
+
+
+    #onelargeLightBoxImg, #threelargeLightBoxImg, #sixlargeLightBoxImg, #eightlargeLightBoxImg, #tenlargeLightBoxImg,
+    #elevenlargeLightBoxImg {
+        height: 712px;
+    }
+
+    #oneClose {
+        padding-right: 262px;
+    }
+
+    #twoClose, #nineClose {
+        padding-right: 460px;
+    }
+
+    #threeClose {
+        padding-right: 94px;
+    }
+
+    #fourClose {
+        padding-right: 437px;
+    }
+
+    #fiveClose, #sevenClose, #tweleveClose {
+        padding-right: 423px;
+    }
+
+    #sixClose {
+        padding-right: 315px;
+    }
+
+    #eightClose {
+        padding-right: 167px;
+    }
+
+    #tenClose {
+        padding-right: 250px;
+    }
+
+    #elevenClose {
+        padding-right: 288px;
+    }
+
+    #thirteenClose, #fourteenClose {
+        padding-right: 466px;
+    }
+
+    #fifteenClose {
+        padding-right: 430px;
     }
   }
