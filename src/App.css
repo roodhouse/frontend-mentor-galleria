@@ -376,6 +376,17 @@
   }
 
   @media (min-width: 1024px) {
+
+    #galleryContainer {
+        flex-direction: column;
+        height: 1477px;
+    }
+
+    .galleryCard {
+        width: 206px;
+        margin-left: 0px;
+    }
+
     #galleryContainer #one, #galleryContainer #two, #galleryContainer #three, #galleryContainer #four {
         position: static;
     }
@@ -420,19 +431,74 @@
         bottom: 905px;
         left: 0;
     }
+
+    #two {
+        order: 5;
+    }
+
+    #three {
+        order: 9;
+    }
+
+    #four {
+        order: 12;
+    }
+
+    #five {
+        order: 2;
+    }
+
+    #seven {
+        order: 10;
+    }
+
+    #eight {
+        order: 13;
+    }
+
+    #nine {
+        order: 3;
+    }
+
+    #ten {
+        order: 7;
+    }
+
+    #eleven {
+        order: 14;
+    }
+
+    #tweleve {
+        order: 4;
+    }
+
+    #thirteen {
+        order: 8;
+    }
+
+    #fourteen {
+        order: 11;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .galleryCard {
+        width: 310px;
+        margin-left: 0px;
+    }
   }
 
   @media (min-width: 1440px) {
+
+    #mainContainer {
+        max-width: 1440px;
+    }
 
     #galleryContainer, #profileContainer {
         padding-left: 40px;
         padding-right: 40px;
     }
 
-    #galleryContainer {
-        flex-direction: column;
-        height: 1477px;
-    }
     .galleryCard {
         width: 310px;
         margin-left: 0px;
@@ -482,54 +548,6 @@
         bottom: 1174px;
         left: 350px;
         margin-bottom: 0;
-    }
-
-    #two {
-        order: 5;
-    }
-
-    #three {
-        order: 9;
-    }
-
-    #four {
-        order: 12;
-    }
-
-    #five {
-        order: 2;
-    }
-
-    #seven {
-        order: 10;
-    }
-
-    #eight {
-        order: 13;
-    }
-
-    #nine {
-        order: 3;
-    }
-
-    #ten {
-        order: 7;
-    }
-
-    #eleven {
-        order: 14;
-    }
-
-    #tweleve {
-        order: 4;
-    }
-
-    #thirteen {
-        order: 8;
-    }
-
-    #fourteen {
-        order: 11;
     }
 
     .galleryCard {

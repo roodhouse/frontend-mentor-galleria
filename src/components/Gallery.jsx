@@ -7,10 +7,11 @@ import ForwardButton from '../assets/shared/icon-next-button.svg'
 import ForwardDisabled from '../assets/shared/icon-next-button-disabled.svg'
 
 function Gallery() {
-
+  
   return (
+
     <>
-      <div id="galleryContainer" className='px-6 md:pl-0 md:pr-0 md:flex md:flex-wrap'>
+      <div id="galleryContainer" className='px-6 md:pl-0 md:pr-0 md:flex md:flex-wrap lg:items-center lg:justify-around xl:justify-evenly'>
         {
           Data && Data.map( record => {
             
@@ -30,7 +31,7 @@ function Gallery() {
             }
 
             return(
-              <div key={record.name} id={record.id} style={divStyle} onClick={handleClick} className='galleryCard w-[327px] mb-6 pl-8 pr-[49px] pb-8 flex flex-col justify-end md:mb-10 md:ml-10 md:w-[324px] lg:w-[206px] xl:!static'>
+              <div key={record.name} id={record.id} style={divStyle} onClick={handleClick} className='galleryCard w-[327px] mb-6 pl-8 pr-[49px] pb-8 flex flex-col justify-end md:mb-10 md:ml-10 md:w-[324px] lg:w-[206px] lg:mb-0 lg:!static'>
                 <div className='name text-white text-2xl leading-normal font-bold mb-[7px]'>
                   <h2>{record.name}</h2>
                 </div>
@@ -42,7 +43,7 @@ function Gallery() {
           })
         }
       </div>
-      <div id="profileContainer" className='hidden xl:mb-[75px]'>
+      <div id="profileContainer" className='hidden xl:mb-[75px] lg:pt-10'>
         {
           Data && Data.map( record => {
 
@@ -50,8 +51,10 @@ function Gallery() {
             const imageBox = record.id+'imgBox'
 
             function handleClick() {
+              
               document.getElementById(record.id+'box').classList.remove('hidden')
               document.getElementById(record.id+'imgBox').classList.remove('hidden')
+
               document.getElementById('mainWrapper').scrollIntoView()
               function disableScroll() {
                 // Get the current page scroll position
@@ -148,7 +151,9 @@ function Gallery() {
                     <div id={lightbox} key={lightbox} className='hidden h-screen bg-black opacity-[.85] absolute top-0 left-0 w-full' />
                     <div id={imageBox} key={imageBox} className='hidden flex flex-col items-center justify-center h-screen absolute top-0 left-0 w-full md:items-center'>
                     <div id={record.id+'Close'} className='self-end'>
-                        <button onClick={handleClose} className='uppercase text-white text-right text-sm font-bold leading-normal tracking-[3px] mb-[33px] md:mb-[41px]' >close</button>
+                        <div id="buttonInner">
+                          <button onClick={handleClose} className='uppercase text-white text-right text-sm font-bold leading-normal tracking-[3px] mb-[33px] md:mb-[41px]' >close</button>
+                        </div>
                       </div>
                       <div id='galleryImage'>
                         <img src={record.images.gallery} alt={record.name} id={record.id+'largeLightBoxImg'} className='' />
