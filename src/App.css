@@ -148,123 +148,123 @@
     }
 
     #onefooter #lineContainer #darkLine {
-        width: 52px !important;
+        width: 6.6% !important;
     }
 
     #onefooter #lineContainer #lightLine {
-        width: 716px !important;
+        width: 93.4% !important;
     }
 
     #twofooter #lineContainer #darkLine {
-        width: 104px !important;
+        width: 13.2% !important;
     }
 
     #twofooter #lineContainer #lightLine {
-        width: 664px !important;
+        width: 86.8% !important;
     }
 
     #threefooter #lineContainer #darkLine {
-        width: 156px !important;
+        width: 19.8% !important;
     }
 
     #threefooter #lineContainer #lightLine {
-        width: 612px !important;
+        width: 80.2% !important;
     }
 
     #fourfooter #lineContainer #darkLine {
-        width: 208px !important;
+        width: 26.4% !important;
     }
 
     #fourfooter #lineContainer #lightLine {
-        width: 560px !important;
+        width: 73.6% !important;
     }
 
     #fivefooter #lineContainer #darkLine {
-        width: 260px !important;
+        width: 33% !important;
     }
 
     #fivefooter #lineContainer #lightLine {
-        width: 508px !important;
+        width: 67% !important;
     }
 
     #sixfooter #lineContainer #darkLine {
-        width: 312px !important;
+        width: 39.6% !important;
     }
 
     #sixfooter #lineContainer #lightLine {
-        width: 456px !important;
+        width: 60.4% !important;
     }
 
     #sevenfooter #lineContainer #darkLine {
-        width: 364px !important;
+        width: 46.2% !important;
     }
 
     #sevenfooter #lineContainer #lightLine {
-        width: 404px !important;
+        width: 53.8% !important;
     }
 
     #eightfooter #lineContainer #darkLine {
-        width: 416px !important;
+        width: 52.8% !important;
     }
 
     #eightfooter #lineContainer #lightLine {
-        width: 352px !important;
+        width: 47.2% !important;
     }
 
     #ninefooter #lineContainer #darkLine {
-        width: 468px !important;
+        width: 59.4% !important;
     }
 
     #ninefooter #lineContainer #lightLine {
-        width: 300px !important;
+        width: 40.6% !important;
     }
 
     #tenfooter #lineContainer #darkLine {
-        width: 520px !important;
+        width: 66% !important;
     }
 
     #tenfooter #lineContainer #lightLine {
-        width: 248px !important;
+        width: 34% !important;
     }
 
     #elevenfooter #lineContainer #darkLine {
-        width: 572px !important;
+        width: 72.6% !important;
     }
 
     #elevenfooter #lineContainer #lightLine {
-        width: 196px !important;
+        width: 34% !important;
     }
 
     #twelevefooter #lineContainer #darkLine {
-        width: 624px !important;
+        width: 79.2% !important;
     }
 
     #twelevefooter #lineContainer #lightLine {
-        width: 145px !important;
+        width: 20.8% !important;
     }
 
     #thirteenfooter #lineContainer #darkLine {
-        width: 676px !important;
+        width: 85.8% !important;
     }
 
     #thirteenfooter #lineContainer #lightLine {
-        width: 92px !important;
+        width: 14.2% !important;
     }
 
     #fourteenfooter #lineContainer #darkLine {
-        width: 728px !important;
+        width: 92.4% !important;
     }
 
     #fourteenfooter #lineContainer #lightLine {
-        width: 40px !important;
+        width: 7.6% !important;
     }
 
     #fifteenfooter #lineContainer #darkLine {
-        width: 768px !important;
+        width: 100% !important;
     }
 
     #fifteenfooter #lineContainer #lightLine {
-        width: 0px !important;
+        width: 0% !important;
     }
 
     #twoprofile #picOfArtist, #fiveprofile #picOfArtist, #sixprofile #picOfArtist, #eightprofile #picOfArtist {
@@ -373,6 +373,248 @@
     #fifteenClose {
         padding-right: 91px;
     }
+  }
 
-  
+  @media (min-width: 1024px) {
+    #galleryContainer #one, #galleryContainer #two, #galleryContainer #three, #galleryContainer #four {
+        position: static;
+    }
+
+    #galleryContainer #five, #galleryContainer #eight {
+        bottom: 357px;
+    }
+
+    #galleryContainer #six {
+        bottom: 207px;
+    }
+
+    #galleryContainer #seven {
+        bottom: 322px;
+    }
+
+    #galleryContainer #nine {
+        bottom: 724px;
+    }
+
+    #galleryContainer #ten {
+        bottom: 634px;
+    }
+
+    #galleryContainer #eleven {
+        bottom: 814px;
+    }
+
+    #galleryContainer #tweleve {
+        bottom: 529px;
+    }
+
+    #galleryContainer #thirteen {
+        bottom: 1010px;
+    }
+
+    #galleryContainer #fourteen {
+        bottom: 940px;
+    }
+
+    #galleryContainer #fifteen {
+        bottom: 905px;
+        left: 0;
+    }
+  }
+
+  @media (min-width: 1440px) {
+
+    #galleryContainer, #profileContainer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #galleryContainer {
+        flex-direction: column;
+        height: 1477px;
+    }
+    .galleryCard {
+        width: 310px;
+        margin-left: 0px;
+    }
+
+    #galleryContainer #five, #galleryContainer #eight {
+        bottom: 390px;
+    }
+
+    #galleryContainer #six {
+        bottom: 240px;
+    }
+
+    #galleryContainer #seven {
+        bottom: 354px;
+    }
+
+    #galleryContainer #nine {
+        bottom: 790px;
+    }
+
+    #galleryContainer #ten {
+        bottom: 700px;
+    }
+
+    #galleryContainer #eleven {
+        bottom: 880px;
+    }
+
+    #galleryContainer #tweleve {
+        
+        bottom: 1095px;
+        margin-bottom: 0;
+    }
+
+    #galleryContainer #thirteen {
+        bottom: 1165px;
+        margin-bottom: 0;
+    }
+
+    #galleryContainer #fourteen {
+        bottom: 596px;
+        margin-bottom: 0;
+    }
+
+    #galleryContainer #fifteen {
+        bottom: 1174px;
+        left: 350px;
+        margin-bottom: 0;
+    }
+
+    #two {
+        order: 5;
+    }
+
+    #three {
+        order: 9;
+    }
+
+    #four {
+        order: 12;
+    }
+
+    #five {
+        order: 2;
+    }
+
+    #seven {
+        order: 10;
+    }
+
+    #eight {
+        order: 13;
+    }
+
+    #nine {
+        order: 3;
+    }
+
+    #ten {
+        order: 7;
+    }
+
+    #eleven {
+        order: 14;
+    }
+
+    #tweleve {
+        order: 4;
+    }
+
+    #thirteen {
+        order: 8;
+    }
+
+    #fourteen {
+        order: 11;
+    }
+
+    .galleryCard {
+        margin-left: 40px;
+    }
+
+    #one, #five, #nine, #tweleve {
+        margin-left: 0px;
+    }
+
+    #onelargeLightBoxImg {
+        width: 917px;
+    }
+
+    #threelargeLightBoxImg {
+        width: 1253px;
+    }
+
+    #sixlargeLightBoxImg {
+        width: 809px;
+    }
+
+    #eightlargeLightBoxImg {
+        width: 1107px;
+    }
+
+    #tenlargeLightBoxImg {
+        width: 947px;
+    }
+
+    #elevenlargeLightBoxImg {
+        width: 869px;
+    }
+
+
+    #onelargeLightBoxImg, #threelargeLightBoxImg, #sixlargeLightBoxImg, #eightlargeLightBoxImg, #tenlargeLightBoxImg,
+    #elevenlargeLightBoxImg {
+        height: 712px;
+    }
+
+    #oneClose {
+        padding-right: 262px;
+    }
+
+    #twoClose, #nineClose {
+        padding-right: 460px;
+    }
+
+    #threeClose {
+        padding-right: 94px;
+    }
+
+    #fourClose {
+        padding-right: 437px;
+    }
+
+    #fiveClose, #sevenClose, #tweleveClose {
+        padding-right: 423px;
+    }
+
+    #sixClose {
+        padding-right: 315px;
+    }
+
+    #eightClose {
+        padding-right: 167px;
+    }
+
+    #tenClose {
+        padding-right: 250px;
+    }
+
+    #elevenClose {
+        padding-right: 288px;
+    }
+
+    #thirteenClose, #fourteenClose {
+        padding-right: 466px;
+    }
+
+    #fifteenClose {
+        padding-right: 430px;
+    }
+
+    #fifteenprofile #artCopy {
+        padding-right: 126px;
+    }
   }

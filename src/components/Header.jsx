@@ -39,9 +39,9 @@ function Header() {
     <>
         <div id="headerContainer" className='flex items-center justify-between'>
             <div id="logoContainer">
-                <img src={Logo} alt="Logo" className='h-8'/>
+                <img src={Logo} alt="Logo" className='h-8 xl:h-12'/>
             </div>
-            <div id="button" onClick={handleClick} className='text-right text-darkGray text-[9px] font-bold leading-normal tracking-[1.929px]'>
+            <div id="button" onClick={handleClick} className='text-right text-darkGray text-[9px] font-bold leading-normal tracking-[1.929px] xl:text-xs xl:tracking-[2.571px]'>
                 <button className='uppercase'>Start Slideshow</button>
             </div>
         </div>
