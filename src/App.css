@@ -421,3 +421,56 @@
         left: 0;
     }
   }
+
+  @media (min-width: 1440px) {
+    .galleryCard {
+        width: 310px;
+    }
+
+    #galleryContainer #five, #galleryContainer #eight {
+        bottom: 390px;
+    }
+
+    #galleryContainer #six {
+        bottom: 240px;
+    }
+
+    #galleryContainer #seven {
+        bottom: 354px;
+    }
+
+    #galleryContainer #nine {
+        bottom: 790px;
+    }
+
+    #galleryContainer #ten {
+        bottom: 700px;
+    }
+
+    #galleryContainer #eleven {
+        bottom: 880px;
+    }
+
+    #galleryContainer #tweleve {
+        order: 13;
+        bottom: 1095px;
+        margin-bottom: 0;
+    }
+
+    #galleryContainer #thirteen {
+        bottom: 1165px;
+        margin-bottom: 0;
+    }
+
+    #galleryContainer #fourteen {
+        order: 11;
+        bottom: 596px;
+        margin-bottom: 0;
+    }
+
+    #galleryContainer #fifteen {
+        bottom: 1174px;
+        left: 350px;
+        margin-bottom: 0;
+    }
+  }

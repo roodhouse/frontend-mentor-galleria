@@ -3,6 +3,8 @@ import Header from './components/Header'
 import Gallery from './components/Gallery'
 
 // dtView
+  // need to adjust the gallery position again
+    // add negative margin to each pic?
 
 function App() {
   

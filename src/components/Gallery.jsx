@@ -30,7 +30,7 @@ function Gallery() {
             }
 
             return(
-              <div key={record.name} id={record.id} style={divStyle} onClick={handleClick} className='w-[327px] mb-6 pl-8 pr-[49px] pb-8 flex flex-col justify-end md:mb-10 md:ml-10 md:w-[324px] lg:w-[206px]'>
+              <div key={record.name} id={record.id} style={divStyle} onClick={handleClick} className='galleryCard w-[327px] mb-6 pl-8 pr-[49px] pb-8 flex flex-col justify-end md:mb-10 md:ml-10 md:w-[324px] lg:w-[206px]'>
                 <div className='name text-white text-2xl leading-normal font-bold mb-[7px]'>
                   <h2>{record.name}</h2>
                 </div>
