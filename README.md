@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution](https://github.com/roodhouse/frontend-mentor-galleria)
-- Live Site URL: [Add live site URL here](https://galleria.rugh.us)
+- Live Site URL: [live site](https://galleria.rugh.us)
 
 ## My process
 
